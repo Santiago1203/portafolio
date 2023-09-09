@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+    --primary-color: #2DE3B3;
+    --fontSize-title: 50px;
+    --fontSize-parrafos: 20px;
+}
+
+.tema-color {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 99;
+    background: transparent;
+}
+
+.cont-colores{
+    width: 100px;
+    height: 30px 0;
+    background: var(--primary-color);
+    text-align: center;
+    position: absolute;
+    right: -100px;
+    transition: 1s;
+    top: -64px;
+}
+
+.cont-colores.active {
+    right: 0;
+}
+
+.open-panel {
+    background: var(--primary-color);
+    color: #2DE3B3;
+    padding: 12px 50px;
+    transform: rotate(-90deg);
+    position: relative;
+    right: -64px;
+    transition: .9s;
+}
+
+.open-panel.active{
+    right: 37px;
+}
+
+.cont-colores button{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: transparent;
+    border-radius: 40px;
+    margin: 10px auto;
+}
+
+.cont-colores button:nth-child(1){
+    background: var(--primary-color);
+}
+
+.cont-colores button:nth-child(2){
+    background: #549FC7;
+}
+
+.cont-colores button:nth-child(3){
+    background: #2DE3B3;
+}
+
+body{
+    background-color: black;
+    font-family: Montserrat;
+}
+
+/*Nav*/
+
+nav.barra a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+nav.barra ul li a:hover{
+    color: var(--primary-color);
+}
+
+nav.barra ul li a:hover::after{
+    background: var(--primary-color);
+    width: 40%;
+}
+
+/* Hero */
+
+#hero{
+    padding-bottom: 100px;
+}
+
+#hero article img{
+    margin-top: 70px;
+}
+
+.foto{
+    width: 500px;
+    height: 500px;
+}
+
+#hero .cont-info{
+    margin-top: 170px;
+}
+
+#hero .cont-info h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#hero .cont-info p{
+    color: #fff;
+    font-size: 20px;
+}
+
+#hero #subtitulo p span{
+    background-color: var(--primary-color);
+    padding: 2px 5px;
+}
+
+#hero .cont-info button{
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+#hero .foto img{
+    width: 600px;
+    height: 600px;
+}
+
+/* Sobre Mí */
+
+#sobreMi{
+        width: 100%;
+        position: relative;
+        padding: 90px 0 100px;
+}
+
+#sobreMi h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    text-align: center;
+    font-weight: 600;
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+
+#sobreMi p{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+}
+
+#sobreMi .sm-info p{
+    padding: 10px 20px;
+    border: 4px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+#sobreMi h3{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    margin: 50px 0;
+    text-align: center;
+}
+
+#sobreMi ul{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+    line-height: 70px;  
+}
+
+/* Servicios */
+
+#perfil{
+    width: 100%;
+    position: relative;
+    padding: 70px 0 100px;
+    text-align: center;
+}
+
+#perfil p{
+    font-size: var(--fontSize-parrafos);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 15px;
+    padding: 40px 0;
+}
+
+#perfil h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#perfil .row{
+    padding-top: 70px;
+}
+
+#perfil .card-services{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    transition: .4s;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+#perfil .card-services:hover{
+    background: var(--primary-color);
+}
+
+#perfil .card-services h3{
+    text-align: right;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#perfil .card-services h4{
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--fontSize-parrafos);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#perfil .card-services p{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+.img-footer {
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+
+.img-footer a {
+    margin: 0 15px;
+}
+
+.img-footer img {
+    margin: 0 20px 0 20px;
+    width: 50px;
+}

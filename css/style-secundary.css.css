@@ -17,7 +17,7 @@
 .cont-colores{
     width: 100px;
     height: 30px 0;
-    background: var(--primary-color);
+    background: #fff;
     text-align: center;
     position: absolute;
     right: -100px;
@@ -30,8 +30,8 @@
 }
 
 .open-panel {
-    background: var(--primary-color);
-    color: #2DE3B3;
+    background: #fff;
+    color: #292c36;
     padding: 12px 50px;
     transform: rotate(-90deg);
     position: relative;
@@ -57,11 +57,11 @@
 }
 
 .cont-colores button:nth-child(2){
-    background: #549FC7;
+    background: #2DE3B3;
 }
 
 .cont-colores button:nth-child(3){
-    background: #2DE3B3;
+    background: #FFBA31;
 }
 
 body{
@@ -242,6 +242,99 @@ nav.barra ul li a:hover::after{
     text-align: left;
     line-height: 30px;
     margin-bottom: 15px;
+}
+
+/* Estudios */
+
+#estudios{
+    width: 100%;
+    position: relative;
+    padding: 70px 0 100px;
+    text-align: center;
+}
+
+#estudios h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#estudios .row{
+    padding-top: 70px;
+}
+
+#estudios .card-services{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    transition: .4s;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#estudios .card-services:hover{
+    background: var(--primary-color);
+}
+
+#estudios .card-services h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#estudios .card-services h4{
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--fontSize-parrafos);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#estudios .card-services p{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+/* Portafolio */
+
+#portafolio h2{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#portafolio h3{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#portafolio p{
+    font-size: var(--fontSize-parrafos);
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+#portafolio img{
+    width: 600px;
+    height: 400px;
 }
 
 /* Footer */

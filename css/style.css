@@ -31,7 +31,7 @@
 
 .open-panel {
     background: #fff;
-    color: #2DE3B3;
+    color: #292c36;
     padding: 12px 50px;
     transform: rotate(-90deg);
     position: relative;
@@ -53,15 +53,15 @@
 }
 
 .cont-colores button:nth-child(1){
-    background: var(--primary-color);
-}
-
-.cont-colores button:nth-child(2){
     background: #549FC7;
 }
 
-.cont-colores button:nth-child(3){
+.cont-colores button:nth-child(2){
     background: #2DE3B3;
+}
+
+.cont-colores button:nth-child(3){
+    background: var(--primary-color);
 }
 
 body{
@@ -71,17 +71,38 @@ body{
 
 /*Nav*/
 
-nav.barra a{
-    color: #fff;
-    font-size: 20px;
-    margin-left: 70px;
+nav.bg-gym {
+    background: var(--bg-body);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    margin-top: -50px;
 }
 
-nav.barra ul li a:hover{
+nav.bg-gym ul li a{
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+    margin-left: 50px;
+}
+
+nav.bg-gym ul li a:after{
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-gym ul li a:hover{
     color: var(--primary-color);
 }
 
-nav.barra ul li a:hover::after{
+nav.bg-gym ul li a:hover::after{
     background: var(--primary-color);
     width: 40%;
 }
@@ -90,6 +111,7 @@ nav.barra ul li a:hover::after{
 
 #hero{
     padding-bottom: 100px;
+    margin-top: 95px;
 }
 
 #hero article img{
@@ -137,9 +159,9 @@ nav.barra ul li a:hover::after{
 /* Sobre Mí */
 
 #sobreMi{
-        width: 100%;
-        position: relative;
-        padding: 90px 0 100px;
+    width: 100%;
+    position: relative;
+    padding: 90px 0 0 0;
 }
 
 #sobreMi h2{
@@ -154,6 +176,7 @@ nav.barra ul li a:hover::after{
 #sobreMi p{
     color: #fff;
     font-size: var(--fontSize-parrafos);
+    text-align: center;
 }
 
 #sobreMi .sm-info p{
@@ -180,8 +203,21 @@ nav.barra ul li a:hover::after{
 #perfil{
     width: 100%;
     position: relative;
-    padding: 70px 0 100px;
+    padding: 90px 0 0 0;
     text-align: center;
+}
+
+#perfil #tit_perfil{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+    margin-top: 75px;
+}
+
+#perfil h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
 }
 
 #perfil p{
@@ -191,12 +227,6 @@ nav.barra ul li a:hover::after{
     line-height: 30px;
     margin-bottom: 15px;
     padding: 40px 0;
-}
-
-#perfil h2{
-    color: #fff;
-    font-size: var(--fontSize-title);
-    font-weight: 700;
 }
 
 #perfil .row{
@@ -249,14 +279,16 @@ nav.barra ul li a:hover::after{
 #estudios{
     width: 100%;
     position: relative;
-    padding: 70px 0 100px;
+    padding: 90px 0 0 0;
     text-align: center;
 }
 
 #estudios h2{
     color: #fff;
     font-size: var(--fontSize-title);
-    font-weight: 700;
+    font-weight: 700;    
+    margin-top: 75px;
+
 }
 
 #estudios .row{
@@ -308,8 +340,16 @@ nav.barra ul li a:hover::after{
 
 /* Portafolio */
 
+#portafolio{
+    width: 100%;
+    position: relative;
+    padding: 90px 0 0 0;
+    text-align: center;
+}
+
 #portafolio h2{
-    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 100px;
     text-align: center;
     color: #fff;
     font-size: var(--fontSize-title);
@@ -335,20 +375,102 @@ nav.barra ul li a:hover::after{
 #portafolio img{
     width: 600px;
     height: 400px;
+    margin-bottom: 150px;
+}
+
+/* Contacto */
+
+#contacto{
+    width: 100%;
+    position: relative;
+    padding: 90px 0 0 0;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#contacto h2{
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#contacto p{
+    font-size: var(--fontSize-parrafos);
+    color: #fff;
+    text-align: center;
+}
+
+.img-contacto{
+    text-align: center;
+    margin: 50px 0 100px 0;
+}
+
+.img-contacto img {
+    margin: 0 150px;
+    width: 100px;
+}
+
+.img-contacto h3{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 15px;
+    padding: 20px 0;
 }
 
 /* Footer */
 
-.img-footer {
-    margin-top: -2%;
-    margin-bottom: 2%;
+footer{
+    padding: 30px;
+    background: #292c36;
+    text-align: center;
+    color: #fff;
 }
 
-.img-footer a {
-    margin: 0 15px;
-}
+/* Responsive */
 
-.img-footer img {
-    margin: 0 20px 0 20px;
-    width: 50px;
+@media screen and (max-width: 640px){
+
+    header nav ul li{
+        background: #292c36;
+    }
+
+    header nav button.navbar-toggler{
+        background: var(--primary-color);
+    }
+
+    #hero .foto img{
+        width: 350px;
+        height: 350px;
+    }
+
+    #hero .cont-info{
+        text-align: center;
+    }
+
+    #perfil .card-services{
+        margin-bottom: 80px;
+    }
+
+    #portafolio h2{
+        margin-bottom: 0;
+    }
+
+    #portafolio p{
+        text-align: center;
+    }
+
+    #portafolio img{
+        width: 100%;
+        height: 190px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    #contacto{
+        margin-bottom: 50px;
+    }
 }
